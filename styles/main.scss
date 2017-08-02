@@ -1,0 +1,19 @@
+@import 'base/normalize.scss'
+@import 'base/reset.scss'
+
+body
+  font-size: 15px
+  width: 700px
+  margin-left: auto
+  margin-right: auto
+
+dt
+  font-weight: bold
+
+section
+  border-bottom: 1px solid #888
+
+.header-japanese
+  margin-left: 1em
+  font-size: 70%
+  font-weight: normal

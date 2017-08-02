@@ -1,0 +1,21 @@
+branches:
+  only:
+    - master
+
+language: node_js
+node_js:
+  - "node"
+
+script: $(npm bin)/gulp build
+
+before_deploy:
+  - touch build/.nojekyll
+
+deploy:
+  repo: suitougreentea/suitougreentea.github.io
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: build/
+  on:
+    branch: master
