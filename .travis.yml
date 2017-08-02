@@ -13,6 +13,7 @@ before_deploy:
 
 deploy:
   repo: suitougreentea/suitougreentea.github.io
+  target_branch: master
   provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
