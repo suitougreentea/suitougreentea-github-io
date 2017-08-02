@@ -6,7 +6,7 @@ language: node_js
 node_js:
   - "node"
 
-script: $(npm bin)/gulp build
+script: $(npm bin)/gulp setup
 
 before_deploy:
   - touch build/.nojekyll
